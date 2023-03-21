@@ -3,16 +3,17 @@
 /**
  * main - Prints the alphabet
  *
- * Return: Always 0 (Success)
+ * Return: Always 0
  */
+
 int main(void)
 {
-char alp[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-int i;
+	char i;
 
-for (i = 0; i < 52; i++)
-putchar(alp[i]);
-}
-putchar('\n');
-return (0);
+	for (i = 'a' ; i <= 'z' ; i++)
+		putchar(i);
+	for (i = 'A' ; i <= 'Z' ; i++)
+		putchar(i);
+	putchar('\n');
+	return (0);
 }
